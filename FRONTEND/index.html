@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Study Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💜 Student Study Plan</h1>
+    <p>Your personal space to plan, focus and succeed!</p>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Welcome, Student! 👋</h2>
+      <p>Small steps every day lead to big achievements.</p>
+    </section>
+
+    <section class="dashboard">
+      <div class="card">
+        <h3>📚 My Subjects</h3>
+        <p>Organize your learning.</p>
+      </div>
+
+
+<div class="card">
+  <h3>📚 My Subjects</h3>
+  <p>Organize your learning.</p>
+
+  <form id="subject-form">
+    <input
+      type="text"
+      id="subject-input"
+      placeholder="Enter a subject..."
+      required
+    >
+    <button type="submit">Add Subject +</button>
+  </form>
+
+  <ul id="subject-list"></ul>
+  <p id="subject-count">0 subjects added</p>
+</div>
+
+
+  <form id="task-form">
+    <input
+      type="text"
+      id="task-input"
+      placeholder="Enter an assignment..."
+      required
+    >
+    <button type="submit">Add Task +</button>
+  </form>
+
+  <ul id="task-list"></ul>
+  
+<p id="task-count">Completed: 0 / 0</p>
+
+<div class="progress-track">
+  <div id="progress-fill"></div>
+</div>
+
+<p id="progress-text">0% completed</p>
+
+</div>
+
+<div class="card">
+  <h3>⏱️ Focus Timer</h3>
+  <p>Concentrate on one task at a time.</p>
+
+  <label for="focus-minutes">Study duration (minutes)</label>
+  <input
+    type="number"
+    id="focus-minutes"
+    min="1"
+    max="180"
+    value="25"
+  >
+
+  <div id="timer-display" aria-live="polite">25:00</div>
+
+  <div class="timer-buttons">
+    <button id="timer-start" type="button">Start</button>
+    <button id="timer-pause" type="button">Pause</button>
+    <button id="timer-reset" type="button">Reset</button>
+  </div>
+
+  <p id="timer-message">Ready for a focused session?</p>
+</div>
+
+      
+
+     
+
+      <div class="card">
+        <h3>📈 My Progress</h3>
+        <p>Celebrate every completed task.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for your learning journey 💜</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
